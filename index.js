@@ -5,8 +5,13 @@ function produceDrivingRange (threshold){
     let distance = Math.abs(endblock - startblock)
     let diff = threshold - distance
 
-    
-    
+    if( diff > 0){
+         return `within range by ${difference}`
+       } else {
+         return `${Math.abs(difference)} blocks out of range`
+       }
+     }
+
   }
   )
 }
