@@ -14,3 +14,10 @@ function produceDrivingRange (threshold){
 
   }
 }
+
+
+function produceTipCalculator(percent){
+  return function calculate(fare){
+    return fare*percent;
+  }
+}
