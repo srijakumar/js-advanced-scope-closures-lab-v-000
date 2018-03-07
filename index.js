@@ -1,11 +1,12 @@
 function produceDrivingRange (threshold){
-  return function withinrange (trip){
-    if (trip<threshold){
-      return false;
-    }
-    else return false
+  return ( function(start, end){
+    let startblock = start;
+    let endblock = end;
+    let distance = Math.abs(endblock - startblock)
+    let diff = threshold - distance
+
+    
     
   }
-
-  
+  )
 }
